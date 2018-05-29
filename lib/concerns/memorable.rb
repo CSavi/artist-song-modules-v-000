@@ -1,11 +1,11 @@
 module Memorable 
   module ClassMethods
   
-  def self.reset_all
-    self.all.clear
+  def reset_all   # 'self' is ommitted when defining class methods inside modules
+    all.clear
   end
 
-  def self.count
+  def count
     @@artists.count
   end
  end 
